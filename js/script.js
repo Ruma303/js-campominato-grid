@@ -14,9 +14,10 @@ btn.addEventListener('click', function() {
 
     //numero di celle scegliendo il value del selettore
     const numCells = parseInt(select.value);
-    //calcolo radice quadrata
+    //calcolo la loro radice quadrata
     const sideSquare = Math.sqrt(numCells);
-    //identificare variabile CSS
+    
+    //identificare variabile CSS in JS
     eleGrid.style.setProperty('--sideSquare', sideSquare); 
         for (let i = 1; i <= numCells; i++) { //trasforma 101 in limite variabile
             //creazione div e classe delle celle
@@ -29,8 +30,8 @@ btn.addEventListener('click', function() {
             eleCell.innerHTML += cellNumber;
             
             //calcolo celle
-            eleCell.style.width = `calc(100% / ${sideSquare});`
-            eleCell.style.height = `calc(100% / ${sideSquare});`
+            //eleCell.style.width = `calc(100% / ${sideSquare});`
+            //eleCell.style.height = `calc(100% / ${sideSquare});`
             eleGrid.append(eleCell);
 
             //funzione toogle per colorare i quadrati sul click

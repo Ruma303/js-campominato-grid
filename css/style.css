@@ -72,7 +72,7 @@ main {
 }
 
 .grid {
-    --sidesquare: 10;
+    --sideSquare: 10;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -84,8 +84,8 @@ main {
 .cell{
     background-color: rgb(255, 209, 102);
     border: solid 2px black;
-    height: calc(100% / 10);
-    width: calc(100% / 10);
+    height: calc(100% / var(--sideSquare));
+    width: calc(100% / var(--sideSquare));
     cursor: pointer;
 }
 
