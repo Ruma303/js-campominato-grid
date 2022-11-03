@@ -72,6 +72,7 @@ main {
 }
 
 .grid {
+    --sidesquare: 10;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -88,23 +89,6 @@ main {
     cursor: pointer;
 }
 
-/* Numero di celle in base alla scelta */
-
-.hard {
-    height: calc(100% / 10);
-    width: calc(100% / 10);
-}
-
-.medium {
-    height: calc(100% / 9);
-    width: calc(100% / 9);
-}
-
-.easy {
-    height: calc(100% / 7);
-    width: calc(100% / 7);
-}
-
 .active {
     background-color: rgb(19, 137, 178);
 }
@@ -113,6 +97,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#title {
+    margin: auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /* FOOTER */
