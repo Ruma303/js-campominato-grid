@@ -28,10 +28,6 @@ btn.addEventListener('click', function() {
             let cellNumber = i;
             eleCell.classList.add('number');
             eleCell.innerHTML += cellNumber;
-            
-            //calcolo celle
-            //eleCell.style.width = `calc(100% / ${sideSquare});`
-            //eleCell.style.height = `calc(100% / ${sideSquare});`
             eleGrid.append(eleCell);
 
             //funzione toogle per colorare i quadrati sul click
